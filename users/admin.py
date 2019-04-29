@@ -5,7 +5,7 @@ from .models import CustomUser, Card, Deck, Hand, Game
 
 class CustomUserAdmin(UserAdmin):
     model = CustomUser
-    list_display = ['email', 'username', 'nickname', ]
+    list_display = ['email', 'username']
 
 admin.site.register(CustomUser, CustomUserAdmin)
 admin.site.register(Card)
